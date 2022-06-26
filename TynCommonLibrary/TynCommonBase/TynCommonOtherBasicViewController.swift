@@ -1,5 +1,5 @@
 //
-//  LMST_OtherBasicViewController.swift
+//  TYN_OtherBasicViewController.swift
 //  Komorebi
 //
 //  Created by HXKJ on 2022/6/6.
@@ -7,11 +7,11 @@
 
 import UIKit
 
-class LMST_OtherBasicViewController: UIViewController,LMST_DefaultStyleViewController {
+class TYN_OtherBasicViewController: UIViewController,TYN_DefaultStyleViewController {
     var bgImageView:UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        setDefauLMST_tyle()
+        setDefauTYN_tyle()
 //        topImageView(toView: view)
     }
     

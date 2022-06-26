@@ -1,5 +1,5 @@
 //
-//  LMST_ExtensionInt.swift
+//  TYN_ExtensionInt.swift
 //  worldCycling
 //
 //  Created by 田宴宁 on 2022/5/31.

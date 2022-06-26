@@ -1,5 +1,5 @@
 //
-//  LMST_DBManager.swift
+//  TYN_DBManager.swift
 //  worldCycling
 //
 //  Created by 田宴宁 on 2022/5/29.
@@ -9,19 +9,19 @@ import WCDBSwift
 @_exported import WCDBSwift
 
 struct WcdbDataPath {
-   static let basePath =  NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first! + "/LMST_DB/wcdb.db"
+   static let basePath =  NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first! + "/TYN_DB/wcdb.db"
 }
 
 enum DBTableName : String {
-    case userTable = "LMST_User"
-    case plazaTable = "LMST_Plaza"
-    case exerciseTable = "LMST_Exercise"
-    case exerciseRecordTable = "LMST_ExerciseRecord"
+    case userTable = "TYN_User"
+    case plazaTable = "TYN_Plaza"
+    case exerciseTable = "TYN_Exercise"
+    case exerciseRecordTable = "TYN_ExerciseRecord"
 }
 
-class LMST_DBmanager: NSObject {
+class TYN_DBmanager: NSObject {
 
-    static let share = LMST_DBmanager.init()
+    static let share = TYN_DBmanager.init()
     var db: Database?
     
     override init() {
@@ -41,7 +41,7 @@ class LMST_DBmanager: NSObject {
     private func createUserTable() {
         do {
            try db?.run(transaction: {
-               createTable(table: DBTableName.userTable, modelType: LMST_MineModel.self)
+               createTable(table: DBTableName.userTable, modelType: TYN_MineModel.self)
             })
             
         } catch let error {
@@ -54,7 +54,7 @@ class LMST_DBmanager: NSObject {
     private func createPlazaTable() {
         do {
            try db?.run(transaction: {
-               createTable(table: DBTableName.plazaTable, modelType: LMST_PlazaModel.self)
+               createTable(table: DBTableName.plazaTable, modelType: TYN_PlazaModel.self)
             })
             
         } catch let error {
@@ -66,7 +66,7 @@ class LMST_DBmanager: NSObject {
     private func createExerciseTable() {
         do {
            try db?.run(transaction: {
-               createTable(table: DBTableName.exerciseTable, modelType: LMST_ExerciseModel.self)
+               createTable(table: DBTableName.exerciseTable, modelType: TYN_ExerciseModel.self)
             })
             
         } catch let error {
@@ -78,7 +78,7 @@ class LMST_DBmanager: NSObject {
     private func createExerciseRecordTable() {
         do {
            try db?.run(transaction: {
-               createTable(table: DBTableName.exerciseRecordTable, modelType: LMST_ExerciseRecordModel.self)
+               createTable(table: DBTableName.exerciseRecordTable, modelType: TYN_ExerciseRecordModel.self)
             })
             
         } catch let error {

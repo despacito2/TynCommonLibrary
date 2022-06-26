@@ -7,13 +7,13 @@
 
 import UIKit
 
-protocol LMST_DefaultStyleViewController: UIViewController {
+protocol TYN_DefaultStyleViewController: UIViewController {
 
 }
 
-extension LMST_DefaultStyleViewController {
+extension TYN_DefaultStyleViewController {
 
-    func setDefauLMST_tyle() {
+    func setDefauTYN_tyle() {
         navigationItem.backBarButtonItem = backBarButton
         navigationController?.navigationBar.isTranslucent = false
 
@@ -25,12 +25,12 @@ extension LMST_DefaultStyleViewController {
     }
 }
 
-class LMST_BasicsViewController: UIViewController, LMST_DefaultStyleViewController {
+class TYN_BasicsViewController: UIViewController, TYN_DefaultStyleViewController {
     var bgImageView:UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setDefauLMST_tyle()
+        setDefauTYN_tyle()
 //        topImageView(toView: view)
         
         //隐藏导航栏之后，开启右滑手势
@@ -52,7 +52,7 @@ class LMST_BasicsViewController: UIViewController, LMST_DefaultStyleViewControll
 
 }
 
-extension LMST_DefaultStyleViewController {
+extension TYN_DefaultStyleViewController {
     func navigationHandStatusH() -> CGFloat {
         let set = UIApplication.shared.connectedScenes
         let sc =  set.first
@@ -74,7 +74,7 @@ extension LMST_DefaultStyleViewController {
     }
 }
 
-extension LMST_BasicsViewController:UIGestureRecognizerDelegate {
+extension TYN_BasicsViewController:UIGestureRecognizerDelegate {
     func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
         if self.navigationController?.viewControllers.count == 0{
             return false;

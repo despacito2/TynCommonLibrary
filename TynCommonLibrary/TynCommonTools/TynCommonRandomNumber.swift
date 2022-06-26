@@ -1,5 +1,5 @@
 //
-//  LMST_RandomNumber.swift
+//  TYN_RandomNumber.swift
 //  LanTunSwimming
 //
 //  Created by 田宴宁 on 2022/5/25.
@@ -7,11 +7,11 @@
 
 import Foundation
 
-enum LMST_RandomNumber {
+enum TYN_RandomNumber {
 
 }
 
-extension LMST_RandomNumber {
+extension TYN_RandomNumber {
     ///随机生成订单号
     static func orderNumbers() -> String {
         let num1 = Int(arc4random_uniform(8999) + 1000)

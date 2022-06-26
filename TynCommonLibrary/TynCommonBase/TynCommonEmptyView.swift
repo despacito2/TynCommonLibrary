@@ -1,5 +1,5 @@
 //
-//  LMST_EmptyView.swift
+//  TYN_EmptyView.swift
 //  Komorebi
 //
 //  Created by 田宴宁 on 2022/6/7.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class LMST_EmptyView: UIView {
+class TYN_EmptyView: UIView {
     
     var offset: CGFloat {
         get {
@@ -24,10 +24,10 @@ class LMST_EmptyView: UIView {
     
 }
 
-extension LMST_EmptyView {
+extension TYN_EmptyView {
     ///加载空页面
-    static func instantiate(offset:CGFloat? = -100, imageName:String? = "nodata3") -> LMST_EmptyView {
-        let emptyView = UINib.init(nibName: "LMST_EmptyView", bundle: .nil).instantiate(withOwner: nil, options: nil)[0] as! LMST_EmptyView
+    static func instantiate(offset:CGFloat? = -100, imageName:String? = "nodata3") -> TYN_EmptyView {
+        let emptyView = UINib.init(nibName: "TYN_EmptyView", bundle: .nil).instantiate(withOwner: nil, options: nil)[0] as! TYN_EmptyView
         emptyView.offset = offset!
         emptyView.contentImageView.image = UIImage(named: imageName!)
         return emptyView

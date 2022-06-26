@@ -1,5 +1,5 @@
 //
-//  LMST_CodeCountdownBtn.swift
+//  TYN_CodeCountdownBtn.swift
 //  KuPaoMarathon
 //
 //  Created by HXKJ on 2022/6/2.

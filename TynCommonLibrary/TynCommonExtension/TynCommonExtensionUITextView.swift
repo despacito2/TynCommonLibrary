@@ -1,5 +1,5 @@
 //
-//  LMST_ExtensionUILabel.swift
+//  TYN_ExtensionUILabel.swift
 //  KuPaoMarathon
 //
 //  Created by HXKJ on 2022/6/3.

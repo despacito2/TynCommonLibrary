@@ -1,5 +1,5 @@
 //
-//  LMST_ExtensionUIAlertController.swift
+//  TYN_ExtensionUIAlertController.swift
 //  LanTunSwimming
 //
 //  Created by 田宴宁 on 2022/5/27.
@@ -13,16 +13,16 @@ extension UIAlertController {
     static func reportAlert() {
         let actionSheet = UIAlertController.init(title: "举报类型", message: nil, preferredStyle: .actionSheet)
         let action1 = UIAlertAction.init(title: "涉黄/违法", style: .default) { _ in
-            LMST_HUD.showMsg(textMsg: "举报成功，正在处理！")
+            TYN_HUD.showMsg(textMsg: "举报成功，正在处理！")
         }
         let action2 = UIAlertAction.init(title: "不实信息", style: .default) { _ in
-            LMST_HUD.showMsg(textMsg: "举报成功，正在处理！")
+            TYN_HUD.showMsg(textMsg: "举报成功，正在处理！")
         }
         let action3 = UIAlertAction.init(title: "有害信息", style: .default) { _ in
-            LMST_HUD.showMsg(textMsg: "举报成功，正在处理！")
+            TYN_HUD.showMsg(textMsg: "举报成功，正在处理！")
         }
         let action4 = UIAlertAction.init(title: "不良价值导向", style: .default) { _ in
-            LMST_HUD.showMsg(textMsg: "举报成功，正在处理！")
+            TYN_HUD.showMsg(textMsg: "举报成功，正在处理！")
         }
         let action5 = UIAlertAction.init(title: "取消", style: .cancel) { _ in
 
@@ -32,7 +32,7 @@ extension UIAlertController {
         actionSheet.addAction(action3)
         actionSheet.addAction(action4)
         actionSheet.addAction(action5)
-        LMST_GetRootController.rootVC().present(actionSheet, animated: true)
+        TYN_GetRootController.rootVC().present(actionSheet, animated: true)
     }
     
     ///举报内容
@@ -58,7 +58,7 @@ extension UIAlertController {
         actionSheet.addAction(action3)
         actionSheet.addAction(action4)
         actionSheet.addAction(action5)
-        LMST_GetRootController.rootVC().present(actionSheet, animated: true)
+        TYN_GetRootController.rootVC().present(actionSheet, animated: true)
     }
     
     ///确认取消弹窗
@@ -72,7 +72,7 @@ extension UIAlertController {
         }
         actionAlert.addAction(actionAffirm)
         actionAlert.addAction(actionCancel)
-        LMST_GetRootController.rootVC().present(actionAlert, animated: true)
+        TYN_GetRootController.rootVC().present(actionAlert, animated: true)
     }
     
     //男女性别
@@ -96,6 +96,6 @@ extension UIAlertController {
         actionSheet.addAction(action4)
         actionSheet.addAction(action3)
 
-        LMST_GetRootController.rootVC().present(actionSheet, animated: true)
+        TYN_GetRootController.rootVC().present(actionSheet, animated: true)
     }
 }

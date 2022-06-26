@@ -7,7 +7,7 @@
 
 import UIKit
 
-class LMST_BasicsNavigationViewController: UINavigationController {
+class TYN_BasicsNavigationViewController: UINavigationController {
     
     override func viewDidLoad() {
         super.viewDidLoad()

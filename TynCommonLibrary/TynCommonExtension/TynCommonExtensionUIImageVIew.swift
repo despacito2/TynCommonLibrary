@@ -1,5 +1,5 @@
 //
-//  LMST_ExtensionUIImageVIew.swift
+//  TYN_ExtensionUIImageVIew.swift
 //  KuPaoMarathon
 //
 //  Created by HXKJ on 2022/6/3.

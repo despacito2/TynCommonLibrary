@@ -8,11 +8,11 @@
 import Foundation
 import UIKit
 
-enum LMST_GetRootController {
+enum TYN_GetRootController {
     
 }
 
-extension LMST_GetRootController {
+extension TYN_GetRootController {
     ///获取rootController
     static func rootVC() ->UIViewController{
         

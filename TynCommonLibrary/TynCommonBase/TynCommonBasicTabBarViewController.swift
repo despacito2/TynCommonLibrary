@@ -9,7 +9,7 @@ import UIKit
 
 
 
-class LMST_BasicTabBarViewController: UITabBarController {
+class TYN_BasicTabBarViewController: UITabBarController {
     
     var humpBtn:UIButton!
     var bgView:UIView!
@@ -68,7 +68,7 @@ class LMST_BasicTabBarViewController: UITabBarController {
     }
     
     @objc func humpBtnClick() {
-//        let vc = UIStoryboard.createMainBundleSB(with: "LMST_Login").instantiateViewController(withIdentifier: "LMST_LoginViewController") as! LMST_LoginViewController
+//        let vc = UIStoryboard.createMainBundleSB(with: "TYN_Login").instantiateViewController(withIdentifier: "TYN_LoginViewController") as! TYN_LoginViewController
 //        present(vc, animated: true)
     }
     
@@ -78,7 +78,7 @@ class LMST_BasicTabBarViewController: UITabBarController {
     
 }
 
-extension LMST_BasicTabBarViewController: UITabBarControllerDelegate {
+extension TYN_BasicTabBarViewController: UITabBarControllerDelegate {
     func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
         var isJumpPage = true
         
@@ -90,7 +90,7 @@ extension LMST_BasicTabBarViewController: UITabBarControllerDelegate {
         
         
         if viewController.tabBarItem.tag == 3 || viewController.tabBarItem.tag == 2 {
-            LMST_LoginViewController.isUserLogin {
+            TYN_LoginViewController.isUserLogin {
 
             } faileCallBack: {
                 isJumpPage = false

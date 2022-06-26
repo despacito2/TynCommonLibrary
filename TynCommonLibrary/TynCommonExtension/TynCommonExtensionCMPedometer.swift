@@ -1,5 +1,5 @@
 //
-//  LMST_ExtensionCMPedometer.swift
+//  TYN_ExtensionCMPedometer.swift
 //  HobbyRunning
 //
 //  Created by HXKJ on 2022/6/14.
@@ -14,7 +14,7 @@ extension CMPedometer {
     static func estimateSupport(supportCallBack:(() -> Void)){
         //   判断设备支持情况
         guard CMPedometer.isStepCountingAvailable() else {
-            LMST_HUD.showMsg(textMsg: "请勿携带iPad跑步，安全第一！")
+            TYN_HUD.showMsg(textMsg: "请勿携带iPad跑步，安全第一！")
             return
         }
         supportCallBack()
@@ -24,7 +24,7 @@ extension CMPedometer {
     static func startPedometerUpdates(isSupportCallBack:(() -> Void)){
         //   判断设备支持情况
         guard CMPedometer.isStepCountingAvailable() else {
-            LMST_HUD.showMsg(textMsg: "当前设备不支持获取步数")
+            TYN_HUD.showMsg(textMsg: "当前设备不支持获取步数")
             return
         }
         

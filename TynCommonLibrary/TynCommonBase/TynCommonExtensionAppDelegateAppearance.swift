@@ -10,30 +10,30 @@ import IQKeyboardManagerSwift
 
 extension AppDelegate {
     
-    func LMST_Configuration() {
+    func TYN_Configuration() {
 //        判断是否登录
         if UserDefaults.standard.object(forKey: "userAccount") != nil && UserDefaults.standard.object(forKey: "userPsw") != nil {
-            LMST_LoginViewController.userModel = LMST_DBmanager.share.qureyExist(fromTable: .userTable, where: LMST_MineModel.CodingKeys.account == UserDefaults.standard.string(forKey: "userAccount")! && LMST_MineModel.CodingKeys.password == UserDefaults.standard.string(forKey: "userPsw")!, orderBy: nil)!
+            TYN_LoginViewController.userModel = TYN_DBmanager.share.qureyExist(fromTable: .userTable, where: TYN_MineModel.CodingKeys.account == UserDefaults.standard.string(forKey: "userAccount")! && TYN_MineModel.CodingKeys.password == UserDefaults.standard.string(forKey: "userPsw")!, orderBy: nil)!
             print("已经登陆")
         }
 
         if UserDefaults.isFirstLaunch() {
-            LMST_MineModel.createUser()
-            LMST_PlazaModel.plazaData()
-            LMST_ExerciseModel.exerciseData()
+            TYN_MineModel.createUser()
+            TYN_PlazaModel.plazaData()
+            TYN_ExerciseModel.exerciseData()
         }
         
-        LMST_ConfigurationKeyboardManager()
-        LMST_ConfigurationUIAppearance()
+        TYN_ConfigurationKeyboardManager()
+        TYN_ConfigurationUIAppearance()
     }
     
-    func LMST_ConfigurationKeyboardManager() {
+    func TYN_ConfigurationKeyboardManager() {
         IQKeyboardManager.shared.enable = true
         IQKeyboardManager.shared.enableAutoToolbar = false
         IQKeyboardManager.shared.shouldResignOnTouchOutside = true
     }
     
-    func LMST_ConfigurationUIAppearance() {
+    func TYN_ConfigurationUIAppearance() {
         
         UIButton.appearance().isExclusiveTouch = true
         

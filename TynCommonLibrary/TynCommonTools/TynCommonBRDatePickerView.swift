@@ -1,5 +1,5 @@
 //
-//  LMST_BRDatePickerView.swift
+//  TYN_BRDatePickerView.swift
 //  LanTunSwimming
 //
 //  Created by 田宴宁 on 2022/5/25.
@@ -8,11 +8,11 @@
 import Foundation
 import BRPickerView
 
-enum LMST_BRPickerView {
+enum TYN_BRPickerView {
 
 }
 
-extension LMST_BRPickerView {
+extension TYN_BRPickerView {
     ///年月日
     static func YMD(title:String, type:BRDatePickerMode? = .YMD, isFromNow:Bool? = true, fromDate:Date? = Date(), isMaxNow:Bool? = false, selecteCallBack:@escaping BRDateResultBlock) {
         let datePickerView = BRDatePickerView()
