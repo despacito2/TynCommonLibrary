@@ -31,17 +31,18 @@ TODO: Add long description of the pod here.
   spec.ios.deployment_target = '9.0'
 
   spec.source_files = 'TynCommonLibrary/**/*'
-  
+  spec.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   # s.resource_bundles = {
   #   'AMMediator' => ['AMMediator/Assets/*.png']
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  s.frameworks = 'UIKit', 'MapKit'
-  s.dependency 'JXPagingView/Paging'
-  s.dependency 'JXSegmentedView'
-  s.dependency 'MBProgressHUD'
-  s.dependency 'IQKeyboardManagerSwift'
-  s.dependency 'BRPickerView'
-  s.dependency 'WCDB.swift'
+  spec.frameworks = 'UIKit', 'MapKit'
+  spec.dependency 'JXPagingView/Paging'
+  spec.dependency 'JXSegmentedView'
+  spec.dependency 'MBProgressHUD'
+  spec.dependency 'IQKeyboardManagerSwift'
+  spec.dependency 'BRPickerView'
+  spec.dependency 'WCDB.swift'
 end
